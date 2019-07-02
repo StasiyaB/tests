@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Progress Circle</title>
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+  </head>
+  <body>
+
+    <div class="container">
+      <h3 class="h3Index">My skills in Web-Developpement :</h3>
+      <ul class="flex-list">
+        <li>
+          <div class="tooltip">
+            <canvas id="canvas" width="100" height="100"></canvas>
+            <span id="percent"></span>
+            <div class="tooltip-text animation">
+              HTML
+            </div>
+          </div>
+
+        </li>
+        <li>
+          <div class="tooltip">
+            <canvas id="canvas2" width="100" height="100"></canvas>
+            <span id="percent2"></span>
+            <div class="tooltip-text animation2">
+              CSS
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="tooltip">
+            <canvas id="canvas3" width="100" height="100"></canvas>
+            <span id="percent3"></span>
+            <div class="tooltip-text animation3">
+              JS
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="tooltip">
+            <canvas id="canvas4" width="100" height="100"></canvas>
+            <span id="percent4"></span>
+            <div class="tooltip-text animation4">
+              PHP
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="tooltip">
+            <canvas id="canvas5" width="100" height="100"></canvas>
+            <span id="percent5"></span>
+            <div class="tooltip-text animation5">
+              MySQL
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="note">
+        * The percentage rate is relative and reveals the knowledge level which I've obtained up to the moment. Namely: averaging correlation of the syntax knowledges, the skills level and the regularity of coding on each of the represented languages.
+      </div>
+    </div>
+    <script type="text/javascript" src="js/classes/Canvas.class.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
