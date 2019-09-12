@@ -1,0 +1,20 @@
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: auto;
+  box-shadow: 0 0 25px rgba(0,0,0,0.2);
+  background-color: #def7de;
+}
+body {
+  background-color: #c3f7c3;
+}
+h1 {
+  color: forestgreen;
+  text-align: center;
+  text-decoration: underline;
+  padding: 18px;
+}
+footer {
+  color: green;
+  padding: 16px;
+}
