@@ -30,18 +30,34 @@ alert('Nick\'s salary is '+obj.Nick+', '+'Peter\'s salary is '+obj.Peter);
 alert(week[4]);
 */
 
-/*var day = [];
-day[0] = 1;
-day[1] = 2;
-day[2] = 3;
-day[3] = 4;
-day[4] = 5;
-day[5] = 6;
-day[6] = 7;
+/*var day = 3;
+
 var week = {1: 'Monday', 2: 'Tuesday', 3: 'Wednesday', 4: 'Thursday', 5: 'Friday', 6: 'Saturday', 7: 'Sunday'};
-alert(week[3]);
+
+alert(week[day]);
 */
 /* ****************************** */
 
-var arr = [ [1, 2, 3], [4, 5, 6], [7,8,9] ];
+/*var arr = [ [1, 2, 3], [4, 5, 6], [7,8,9] ];
 alert(arr[1][0]);
+*/
+
+/*var obj = {js:['jQuery', 'Angular'], php:'hello', css: 'world'};
+alert(obj.js[0]);
+*/
+
+/*var week = {
+  'ru': ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'],
+  'en': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+};
+alert(week['ru'][0]+', '+week['en'][2]);
+*/
+
+/*var lang = ['ru'];
+var day = [3];
+var week = {
+  'ru': ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'],
+  'en': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+};
+alert(week[lang][day]);
+*/
