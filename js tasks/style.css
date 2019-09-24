@@ -18,3 +18,11 @@ footer {
   color: green;
   padding: 16px;
 }
+.action {
+  padding: 45px;
+}
+.text {
+  text-align: center;
+  color: forestgreen;
+  font-family: arial;
+}

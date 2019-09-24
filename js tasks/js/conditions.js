@@ -156,7 +156,7 @@ var result = Number(str[0]) + Number(str[1]) + Number(str[2]);
 alert(result);
 */
  /*21. Дана строка из 6-ти цифр. Проверьте, что сумма первых трех цифр равняется сумме вторых трех цифр. Если это так - выведите 'да', в противном случае выведите 'нет'.*/
- /*var str = '123456';
+ var str = '123456';
  var sum1 = Number(str[0]) + Number(str[1]) + Number(str[2]);
  var sum2 = Number(str[3]) + Number(str[4]) + Number(str[5]);
  var result;
@@ -166,4 +166,3 @@ if (sum1 == sum2) {
   result = 'No';
 }
 alert(result);
-*/
