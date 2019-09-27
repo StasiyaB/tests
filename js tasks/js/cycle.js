@@ -155,6 +155,8 @@ var str = 0;
 for (var i = 0; i < arr.length; i ++) {
   document.write(str = -arr[i]);
 }
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+document.write('-'+arr.join('-')+'-');
 ***************/
 /*14. Составьте массив дней недели. С помощью цикла for выведите все дни недели, а выходные дни выведите жирным.*/
 /*var week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
