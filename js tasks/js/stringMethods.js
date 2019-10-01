@@ -89,7 +89,33 @@ document.write(str);
 */
 /* ******************* Задачи **************** */
 /*15. Преобразуйте первую букву строки в верхний регистр.*/
-
+//var str = 'i love javascript';
+/*var arr = (str.split(' '));
+var newStr = arr[0].toUpperCase()+' '+arr[1]+' '+arr[2];
+document.write(newStr);
+console.log(arr);
+console.log(newStr);
+*/
+/*
+var newStr = str[0].toUpperCase()+str.substr(1, str.length);
+document.write(newStr);
+*/
 /*16. Преобразуйте первую букву каждого слова строки в верхний регистр.*/
-
+/*var str = 'i love javascript';
+var arr = str.split(' ');
+console.log(arr);
+for (var i = 0; i < arr.length; i ++) {
+  arr[i] = arr[i][0].toUpperCase()+arr[i].substr(1, str.length);
+}
+var newStr = arr.join(' ');
+document.write(newStr);
+*/
 /*17.Преобразуйте строку 'var_test_text' в 'varTestText'. Скрипт, конечно же, должен работать с любыми аналогичными строками.*/
+var str = 'var_test_text';
+var arr = str.split('_');
+
+for (var i = 0; i < arr.length; i ++) {
+  arr[i] = arr[i][0].toUpperCase()+arr[i].substr(1, str.length);
+}
+var newStr = arr.join('');
+document.write(newStr);
