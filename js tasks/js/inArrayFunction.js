@@ -59,3 +59,25 @@ for (var i = 0; i < arr.length; i +=2) {
 }
 var newStr = newArr.join('');
 console.log(newStr);
+/*var str = '0618244767';
+var arr = str.split('');
+var newArr = [];
+for (var i = 0; i < arr.length; i += 2) {
+      var couple = arr[i]+arr[i+1];
+      newArr = newArr.concat(couple);
+}
+var newStr = newArr.join('.');
+console.log(newStr);
+document.write(newStr);
+*/
+function splitCouples(str) {
+  var arr = str.split('');
+  var newArr = [];
+  for (var i = 0; i < arr.length; i += 2) {
+        var couple = arr[i]+arr[i+1];
+        newArr = newArr.concat(couple);
+  }
+  var newStr = newArr.join('.');
+  return newStr;
+}
+document.write(splitCouples('0618244767'));
