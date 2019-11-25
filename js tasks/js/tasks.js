@@ -85,7 +85,7 @@ function compareTriplets(a, b) {
     return result;
 }
 //console.log(compareTriplets([3, 5, 1], [2, 5, 2]));
-var arr = [
+/*var arr = [
   [1, 2, 3, 4, 1],
   [4, 5, 6, 2, 6],
   [7, 8, 3, 6, 7],
@@ -94,7 +94,6 @@ var arr = [
 ];
 var sumR = 0;
 var sumL = 0;
-
 for (var i = 0; i < arr.length; i ++) {
   for (var j = 0; j < arr.length; j ++) {
     if (i === j) {
@@ -107,4 +106,47 @@ for (var i = 0; i < arr.length; i ++) {
 }
 var dif = Math.abs(sumR - sumL);
 //console.log(arr[0][3], arr[1][2], arr[2][1], arr[3][0]);
-console.log(sumL, sumR, dif);
+//console.log(sumL, sumR, dif);
+*/
+var arr = [1, 2, -1, -2, -3, 0, 0];
+var sumP = 0;
+var sumN = 0;
+var sumZ = 0;
+for (var i = 0; i < arr.length; i ++) {
+  if (arr[i] > 0) {
+   sumP += 1;
+  }
+  else if (arr[i] < 0) {
+    sumN += 1;
+  } else {
+    sumZ += 1;
+  }
+}
+var fractionP = sumP / arr.length;
+var fractionN = sumN / arr.length;
+var fractionZ = sumZ / arr.length;
+//console.log(fractionP, fractionN, fractionZ);
+function plusMinus(arr) {
+  var sumP = 0;
+  var sumN = 0;
+  var sumZ = 0;
+  var newArr = [];
+  for (var i = 0; i < arr.length; i ++) {
+    if (arr[i] > 0) {
+     sumP += 1;
+    }
+    else if (arr[i] < 0) {
+      sumN += 1;
+    } else {
+      sumZ += 1;
+    }
+  }
+  var fractionP = (sumP / arr.length).toFixed(6);
+  var fractionN = (sumN / arr.length).toFixed(6);
+  var fractionZ = (sumZ / arr.length).toFixed(6);
+  //var str = fractionP + '<br>' + fractionN.toFixed(6) + '<br>' + fractionZ.toFixed(6);
+  newArr.push(fractionP, fractionN, fractionZ);
+  newArr = newArr.join('<br>');
+  return newArr;
+}
+document.write(plusMinus(arr));
