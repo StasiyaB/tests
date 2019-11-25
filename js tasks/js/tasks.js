@@ -67,4 +67,44 @@ function change(cash) {
     ten:  ten
   };
 }
-console.log(change(589));
+//console.log(change(589));
+
+function compareTriplets(a, b) {
+    var result = [];
+    var aSum = 0;
+    var bSum = 0;
+    for (var i = 0; i < 3; i ++) {
+      if (a[i] < b[i]) {
+        bSum += 1;
+      }
+      else if (a[i] > b[i]) {
+        aSum += 1;
+      }
+    }
+    result.push(aSum, bSum);
+    return result;
+}
+//console.log(compareTriplets([3, 5, 1], [2, 5, 2]));
+var arr = [
+  [1, 2, 3, 4, 1],
+  [4, 5, 6, 2, 6],
+  [7, 8, 3, 6, 7],
+  [1, 4, 4, 5, 4],
+  [1, 8, 9, 6, 5]
+];
+var sumR = 0;
+var sumL = 0;
+
+for (var i = 0; i < arr.length; i ++) {
+  for (var j = 0; j < arr.length; j ++) {
+    if (i === j) {
+      sumL += arr[i][j];
+    }
+    if (i + j === arr.length - 1) {
+      sumR += arr[i][j];
+    }
+  }
+}
+var dif = Math.abs(sumR - sumL);
+//console.log(arr[0][3], arr[1][2], arr[2][1], arr[3][0]);
+console.log(sumL, sumR, dif);
