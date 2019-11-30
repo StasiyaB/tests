@@ -149,4 +149,56 @@ function plusMinus(arr) {
   newArr = newArr.join('<br>');
   return newArr;
 }
-document.write(plusMinus(arr));
+//document.write(plusMinus(arr));
+function staircase(n) {
+  var symbol = '#';
+  var space = '&nbsp;&nbsp;';
+  var br = '<br>';
+  for (var i = 0; i <= n; i ++) {
+      document.write(space.repeat(n - i) + symbol.repeat(i) + br);
+  }
+}
+//staircase(4);
+
+/*var arr = [1, 2, 3, 4, 5];
+var newArr = [];
+var i;
+if(arr[i] >= 1 && arr[i] <= Math.pow(10, 9)) {
+  for (i = 0; i < arr.length; i ++) {
+    if (i)
+  }
+}
+*/
+var friends = ["Ryan", "Kieran", "Mark", "Jenny", "Jene"];
+/*var trueOnes = [];
+for (var i = 0; i < friends.length; i ++) {
+  if (friends[i].length === 4) {
+    trueOnes.push(friends[i]);
+  }
+}
+console.log(trueOnes);
+*/
+
+function friend(friends){
+  var trueOnes = [];
+  for (var i = 0; i < friends.length; i ++) {
+    if (friends[i].length === 4) {
+      trueOnes.push(friends[i]);
+    }
+  }
+  return trueOnes;
+}
+
+//document.write(friend(friends));
+function divisors(integer) {
+  var arr = [];
+
+  for (var i = 2; i < integer; i ++){
+    if (integer % i == 0) {
+      arr.push(i);
+      console.log(i);
+    }
+  }
+   return arr.length ? arr : integer + ' is prime';
+};
+document.write(divisors(12));
