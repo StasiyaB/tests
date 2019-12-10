@@ -201,4 +201,10 @@ function divisors(integer) {
   }
    return arr.length ? arr : integer + ' is prime';
 };
-document.write(divisors(12));
+//document.write(divisors(12));
+//decodeMorse = function(morseCode){
+  /*MORSE_CODE['.-', '-...', '-.-.', '-..', '.', '..-.', '--.', '....', '..', '.---', '-.-', '.-..', '--', '-.', '---', '.--.', '--.-', '.-.', '...', '-', '..-', '...-', '.--', '-..-', '-.--', '--..'];*/
+/*  
+  var code = morseCode.split('');
+
+}*/

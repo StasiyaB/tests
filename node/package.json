@@ -1,0 +1,20 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "description": "First step",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StasiyaB/tests.git"
+  },
+  "keywords": [],
+  "author": "Anastasiya <nastasiya.baryash@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StasiyaB/tests/issues"
+  },
+  "homepage": "https://github.com/StasiyaB/tests#readme"
+}

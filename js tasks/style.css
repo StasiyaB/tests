@@ -30,17 +30,26 @@ footer {
   border: dashed 1px forestgreen;
   padding: 16px;
 }
+.insider {
+  border: solid 2px red;
+  padding: 26px;
+  margin: 16px;
+  width: 50%;
+}
 input {
-  background-color: #c1b8b8;
+  background-color: #a7d6a7;
   border-color: forestgreen;
   border-radius: 4px;
   padding: 4px;
+  margin: 4px;
+  width: 300px;
 }
 button {
   background-color: #21AF66;
   border-color: forestgreen;
   border-radius: 4px;
   padding: 4px;
+  margin: 4px;
 }
 button:hover {
   box-shadow: 0px 1px 38px -4px rgba(34,139,34,0.47);
