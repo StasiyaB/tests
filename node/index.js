@@ -10,7 +10,11 @@ setInterval(function() {
 for (var i = 1; i <= 10; i ++) {
     console.log(i);
 }
-*/
+
 setInterval(function () {
     console.log(new Date());
 }, 1000);
+*/
+ let math = require('./math');  
+ console.log(math.square(4), math.cube(4), math.forth(4));
+ 

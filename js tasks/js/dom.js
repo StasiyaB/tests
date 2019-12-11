@@ -123,6 +123,60 @@ function unblock(button) {
 	unblock.style.display = 'none';
 }
 */
-function buttonClick(elem) {
+/*function buttonClick(elem) {
 	elem.value ++;
+}
+*/
+/*
+function float() {
+	var input = document.getElementById('input');
+	input.value = 'Теперь я плаваю справа!';
+	input.style.cssFloat = 'right';
+}
+*/
+/*function newClass() {
+	var input = document.getElementById('input');
+	input.value = 'Мои css классы: eee www ddd';
+	input.classList.add('eee');
+	input.classList.add('www');
+	input.classList.add('ddd');
+}
+*/
+/*function buttonClick() {
+	var input1 = document.getElementById('input1');
+	var input2 = document.getElementById('input2');
+	var input1Value = input1.value;
+	var input2Value = input2.value;
+	input1.value = input2Value;
+	input2.value = input1Value;
+}
+*/
+/*function square() {
+	var input = document.getElementById('input');
+	var number = Number(input.value);
+	var square = number*number;
+	var result = document.getElementById('result');
+	result.value = square;
+}
+*/
+/*function square() {
+	var input = document.getElementById('input');
+	var number = Number(input.value);
+	if (isNaN(number) == false) {
+		var square = number*number;
+		var result = document.getElementById('result');
+		result.value = square;
+	} else {
+			alert('Введено не число!');
+	}
+}
+*/
+/*function pointer(elem) {
+	elem.disabled = true;
+	elem.style.cursor = 'not-allowed';
+}
+*/
+function add(elem) {
+	var input = document.getElementById('input');
+	input.value += elem.value.substr(-1);
 }
