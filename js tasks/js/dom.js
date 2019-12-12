@@ -176,7 +176,8 @@ function float() {
 	elem.style.cursor = 'not-allowed';
 }
 */
-function add(elem) {
+/*function add(elem) {
 	var input = document.getElementById('input');
 	input.value += elem.value.substr(-1);
 }
+*/

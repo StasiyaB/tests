@@ -27,7 +27,7 @@
           <script src="js/recursion.js"></script>
           <script src="js/cycles2.js"></script>-->
           <script src="js/tasks.js"></script>
-          <script src="js/dom.js"></script>
+
         </p>
         <div class="dom">
           <!--<button onclick="alert('Привет!')">Нажми на меня</button>
@@ -103,7 +103,117 @@
           <input type="submit" onclick="add(this)" value="7"><br>
           <input type="submit" onclick="add(this)" value="8"><br>
           <input type="submit" onclick="add(this)" value="9"><br>
-          <input type="submit" onclick="add(this)" value="0"><br>-->
+          <input type="submit" onclick="add(this)" value="0"><br>
+          <p id="elem">
+            При нажатии на кнопку текст в абзаце поменяется.
+          </p><br>
+          <input type="submit" value="Нажмите на меня!" onclick="change()">
+          <p id="test">
+            При нажатии на кнопку текст в абзаце поменяется.
+          </p>
+          <input type="submit" value="Нажмите на меня!" onclick="change()">
+          <p id="test">
+            При нажатии на кнопку абзац станет h3, но текст останется.
+          </p>
+          <input type="submit" value="Нажмите на меня!" onclick="change()">
+          <p>
+            <input type="text" value="" id="input1" placeholder="введите число">
+            +
+            <input type="text" value="" id="input2" placeholder="введите число">
+            = <span id="result"> ?</span>
+          </p><br>
+          <button onclick="addition()">Нажмите чтобы сложить</button>
+
+          <p>
+            При нажатии на кнопку текст в каждом абзаце поменяется.
+          </p>
+          <p>
+            При нажатии на кнопку текст в каждом абзаце поменяется.
+          </p>
+          <p>
+            При нажатии на кнопку текст в каждом абзаце поменяется.
+          </p>
+          <p>
+            При нажатии на кнопку текст в каждом абзаце поменяется.
+          </p>
+          <h2>
+            А я h2 и не поменяюсь!
+          </h2>
+          <input type="submit" value="Нажмите на меня!" onclick="change()">
+
+          <h2 class="www">Заголовок с классом www.</h2>
+          <p class="www">Абзац с классом www.</p>
+          <p class="www">Абзац с классом www.</p>
+          <p>Просто абзац, не поменяется.</p>
+          <input type="submit" value="Нажмите на меня!" onclick="change()">
+
+          <h2 class="www">Заголовок с классом www, не поменяется.</h2>
+          <p class="www">Абзац с классом www.</p>
+          <p class="www">Абзац с классом www.</p>
+          <p class="www">Абзац с классом www.</p>
+          <p>Просто абзац, не поменяется.</p>
+          <input type="submit" value="Нажмите на меня" onclick="change()">
+
+          <p id="test" class="my-class">
+            Абзац с class="my-class".
+          </p>
+          <input type="submit" value="Нажми - и я выведу класс абзаца." onclick="show()">
+
+          <p id="test" class="my-class">
+            Абзац с class="my-class". Класс задает красный цвет.
+          </p><br>
+          <input type="submit" value="Нажми - и я выведу класс абзаца." onclick="show()"><br>
+          <input type="submit" value="Нажми - и я удалю атрибут class для абзаца." onclick="del()">
+
+          <p id="test" class="my-class class">
+            Абзац с class="my-class class". Класс "my-class" задает красный цвет.
+          </p><br>
+          <input type="submit" value="Нажми - и я выведу класс абзаца." onclick="show()"><br>
+          <input type="submit" value="Нажми - и я изменю атрибут class для абзаца на 'new-class'." onclick="change()">
+
+          <input type="text" value="" placeholder="Введи в меня текст!" id="test" onkeyup="print(this)">
+          <span id="text"> </span>
+
+          <a href="http://google.com">link 1</a><br><br>
+          <a href="http://tut.by">link 2</a><br><br>
+          <a href="http://yandex.ru">link 3</a><br><br>
+          <input type="submit" value="Нажмите на меня!" onclick="hereItIs()">
+
+          <p id="test">
+            При нажатии на кнопку текст в абзаце поменяется.
+          </p>
+          <input type="submit" value="Нажмите на меня!" onclick="change(this)">
+
+          <p>
+            Абзац с текстом.
+          </p>
+          <p>
+            Абзац с текстом.
+          </p>
+          <p>
+            Абзац с текстом.
+          </p>
+          <p>
+            Абзац с текстом.
+          </p>
+          <p>
+            Абзац с текстом.
+          </p>
+          <p>
+            Абзац с текстом.
+          </p>
+          <p>
+            Абзац с текстом.
+          </p>
+          <p>
+            Абзац с текстом.
+          </p><br><br>
+          <input type="submit" value="Нажмите на меня!" onclick="change()">-->
+
+
+          <script src="js/dom.js"></script>
+          <script src="js/domPage.js"></script>
+          <script src="js/domDate.js"></script> 
         </div>
       </div>
       <footer>
