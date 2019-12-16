@@ -29,6 +29,10 @@ footer {
   height: 60px;
   padding: 16px;
 }
+
+#text {  
+  font-family: arial;
+}
 .dom {
   border: dashed 1px forestgreen;
   padding: 16px;
