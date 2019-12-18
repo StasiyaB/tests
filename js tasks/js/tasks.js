@@ -202,24 +202,31 @@ function divisors(integer) {
    return arr.length ? arr : integer + ' is prime';
 };
 //document.write(divisors(12));
-function func(morseCode){
-  var letters = [' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
-  var morseLetters = ['\xa0\xa0\xa0\xa0', '.-', '-...', '-.-.', '-..', '.', '..-.', '--.', '....', '..', '.---', '-.-', '.-..', '--', '-.', '---', '.--.', '--.-', '.-.', '...', '-', '..-', '...-', '.--', '-..-', '-.--', '--..', '.----', '..---', '...--', '....-', '.....', '-....', '--...', '---..', '----.', '-----'];
 
-  var code = morseCode;
-  var letter = '';
-  var text = '';
-  var space = '\xa0';
-  for (var i = 0; i < code.length; i ++) {
-    if (space == 1) {
-      for (var j = 0; j < 37; j ++) {
-        if (code[i] == morseLetters[j]) {
-           letter += letters[j];
-        }
-      }
+
+/* ****************** MINI-MAX SUM *************** */
+/*
+var arr = [1, 2, 3, 4, 5];
+let sum = 0;
+
+arr.forEach(function(elem) {
+	sum += elem -1;
+});
+
+console.log(sum);
+
+var str = '1, 2, 3, 4, 5';
+var digits = str.split(',');
+console.log(digits);
+let sum = 0;
+
+    for (let digit of digits) {
+
+        sum += Number(digit);
+        var result = sum / digits.length;
     }
-  }
 
-  return text;
-}
-//document.write(func('.... . -.--   .--- ..- -.. .'));
+
+console.log(sum);
+console.log(result);
+*/

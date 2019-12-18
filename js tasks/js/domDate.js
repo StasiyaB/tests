@@ -52,7 +52,7 @@ if (date.getDate() == 29) {
 /*function checkDate(year, month, day) {
   let date = new Date(year, month - 1, day);
   return (date.getFullYear() == year && date.getMonth() == month - 1 && date.getDate() == day);
-  /*if (date.getFullYear() == year && date.getMonth() == munth - 1 && date.getDate() == day) {
+  /*if (date.getFullYear() == year && date.getMonth() == month - 1 && date.getDate() == day) {
     return true;
   } else {
     return false;
@@ -209,25 +209,58 @@ var min = Math.floor(date.getTime() / (1000 * 60)) ;
 //console.log(min);
 /* ***************** Работа с Date.parse *********** */
 /*9. Выведите на экран количество часов, прошедшее между 1 марта 1988 года и текущим моментом с помощью Date.parse.*/
-var date = new Date();
+/*var date = new Date();
 var now = date.getTime();
 
 var than = Date.parse('1988-03-01T00:00:00');
 
 var result = now - than;
-result = Math.ceil(result / (1000 * 60 * 60));
+result = Math.ceil(result / (1000 * 60 * 60));*/
 //console.log(result);
 
 /* *************** Разность между датами ********* */
 /*10. Выведите на экран количество секунд с начала дня до настоящего момента времени.*/
-var date = new Date();
+/*var date = new Date();
 
 var now = new Date(date.getFullYear(), date.getMonth(), date.getDate(), 0, 0, 0);
 
-var result = Math.floor((date.getTime() - now.getTime()) / 1000);
-console.log(result);
+var result = Math.floor((date.getTime() - now.getTime()) / 1000);*/
+//console.log(result);
 
 /* ***************** Задачи **************** */
 /*11. Выведите на экран количество секунд, которое осталось до конца дня. */
+var date = new Date();
 
-/*12. Создайте инпут, в который пользователь вводит дату своего рождения в формате '2014-12-31' (с конкретным годом). По потери фокуса выведите под инпутом сколько дней осталось до его дня рождения. Воспользуйтесь методом Date.parse. */
+var now = new Date(date.getFullYear(), date.getMonth(), date.getDate(), date.getHours(), date.getMinutes(), date.getSeconds());
+
+var endOfTheDay = Date.parse('2019-12-18T00:00:00');
+
+var result = endOfTheDay - now;
+result = Math.floor(result / 1000);
+
+//console.log(result);
+
+/*12. Создайте инпут, в который пользователь вводит дату своего рождения в формате '2014-12-31' (с конкретным годом). По потери фокуса выведите под инпутом сколько дней осталось до его дня рождения.*/
+
+/*function show() {
+  var birthdate = document.getElementById('birthdate');
+  var result = document.getElementById('result');
+
+  var newBirthdate = birthdate.value.split('-');
+
+  var now = new Date();
+
+  if (newBirthdate[1]-1 < now.getMonth()) {
+    var target = new Date(now.getFullYear() + 1, newBirthdate[1]-1, newBirthdate[2], 0, 0, 0);
+  } else if (newBirthdate[1]-1 == now.getMonth() && newBirthdate[2] < now.getDate()) {
+    target = new Date(now.getFullYear() + 1, newBirthdate[1]-1, newBirthdate[2], 0, 0, 0);
+  } else {
+    target = new Date(now.getFullYear(), newBirthdate[1]-1, newBirthdate[2], 0, 0, 0);
+  }
+
+  var dif =  Math.ceil((target - now) / 1000);
+  var days = Math.ceil(dif / (60 * 60 * 24));
+
+  result.value = days;
+}
+*/

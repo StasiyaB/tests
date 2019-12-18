@@ -30,7 +30,7 @@ footer {
   padding: 16px;
 }
 
-#text {  
+#text {
   font-family: arial;
 }
 .dom {
@@ -46,13 +46,16 @@ footer {
 .my-class {
   color: red;
 }
+#result {
+  width: 150px;
+}
 input {
   background-color: #a7d6a7;
   border-color: forestgreen;
   border-radius: 4px;
   padding: 4px;
   margin: 4px;
-  width: 300px;
+  width: 150px;
 }
 button {
   background-color: #21AF66;

@@ -121,5 +121,9 @@
   $var -= 15; //= $var - 15;
   echo $var;
 */
+
+/* ***************** ARRAYS ************** */
+
+
   include('index.phtml');
 ?>
