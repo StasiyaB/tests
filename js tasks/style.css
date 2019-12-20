@@ -25,8 +25,8 @@ footer {
   text-align: center;
   color: forestgreen;
   font-family: arial;
-  border: solid 2px forestgreen;
-  height: 60px;
+  /*border: solid 2px forestgreen;*/
+
   padding: 16px;
 }
 

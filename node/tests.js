@@ -112,3 +112,55 @@ for (let fileName of fileNames) {
 */
 
 /*7. Дан текстовый файл. Запустите таймер, который каждую секунду будет записывать в файл число - сначала 1, потом 2, потом 3 и так далее. Как только счетчик таймера дойдет до 100 - прекратите отсчет и очистите файл.*/
+
+/*let id = setInterval(newFileNote, 1000);
+
+function newFileNote() {
+    fs.readFile('test.txt', 'utf8', (err, data) => {
+        if (err) throw err; 
+        
+        fs.writeFile('test.txt', Number(data) + 1, (err) => {
+            if (err) throw err;
+
+            console.log(data);
+        });
+
+    });
+    
+}
+setTimeout(stop, 101000);
+function stop() {
+    clearInterval(id);  
+    
+    fs.truncate('test.txt', err => {
+        if (err) throw err;
+
+        console.log("clean");
+    });
+}
+*/
+/*
+newFileNote();
+function newFileNote() {
+    fs.readFile('test.txt', 'utf8', (err, data) => {
+        if (err) throw err;
+
+        fs.writeFile('test.txt', Number(data) + 1, (err) => {
+            if (err) throw err;
+
+            console.log(data);
+        });
+        if (data < 100) {
+            setTimeout(newFileNote, 1000);
+        } else {
+            fs.truncate('test.txt', err => {
+                if (err) throw err;
+
+                console.log("clean");
+            });
+        }
+    });    
+}
+*/
+
+
