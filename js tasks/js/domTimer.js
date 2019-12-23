@@ -62,7 +62,7 @@ function stop() {
 }
 */
 /* ********** TEXT SLIDER ********* */
-slider(['text 1', 'text 2', 'text 3'], '#elem', '#prev', '#next');
+/*slider(['text 1', 'text 2', 'text 3'], '#elem', '#prev', '#next');
 
 function slider(texts, elem, prev, next) {
   var elem = document.querySelector(elem);
@@ -88,6 +88,7 @@ function slider(texts, elem, prev, next) {
     elem.innerHTML = texts[i];
   });
 }
+*/
 /*var i = 1;
 elem.innerHTML = texts[0];
 setInterval(function () {
@@ -99,3 +100,6 @@ setInterval(function () {
   }
 }, 1000);
 */
+
+/* ********* Задачи для решения ********* */
+/*1.  Создайте отсчет от 0 до бесконечности:*/

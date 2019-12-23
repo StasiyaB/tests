@@ -163,4 +163,25 @@ function newFileNote() {
 }
 */
 
+/*23/12/19 Дан массив с названиями папок. Переберите его циклом и создайте соответствующие папки.*/
+/*
+let folders = ['test1', 'test2', 'test3'];
 
+for (var folder of folders) {
+    fs.mkdir(folder, err => {
+        if (err) throw err;
+
+        console.log('done');
+        
+    });
+}
+*/
+/* 23/12/19 Удалите какую-нибудь папку. */
+/*
+fs.rmdir('test3', err => {
+    if (err) throw err;
+
+    console.log('done');
+    
+});
+*/

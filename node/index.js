@@ -92,10 +92,34 @@ fs.unlink('folder/test2.txt', err => {
 });
 */
 /* Clean file */
-
+/*
 fs.truncate('test.txt', err => {
     if (err) throw err;
 
     console.log('done!');
     
 });
+*/
+/* CREATE FOLDER */
+/*
+fs.mkdir('tests/test', err => {
+    if (err) throw err;
+});
+*/
+
+/* DELETE FOLDER */
+/*
+fs.rmdir('tests', err => {
+    if (err) throw err;
+});
+*/
+
+/* READ FOLDER */
+
+fs.readdir('folder', (err, files) => {
+    if (err) throw err;
+
+    console.log(files);
+    
+});
+
