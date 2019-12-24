@@ -7,7 +7,7 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
     <title>Tasks JS</title>
   </head>
-  <body>
+  <body> <!--onload="go()"-->
     <main class="container">
       <h1>Task N1</h1>
       <div class="action">
@@ -225,15 +225,82 @@
           <!--<input type="text" value="1" id="test">
           <input type="submit" value="start" onclick="timer()">-->
 <!-- TEXT SLIDER -->
-          <div id="elem"></div>
+          <!--<div id="elem"></div>
           <button id="prev">prev</button>
-          <button id="next">next</button>
+          <button id="next">next</button>-->
+<!--TIMER-->
+          <!--<div class="timer">
+            <p id="count">
+              0
+            </p>
+            <input type="submit" value="Нажмите на меня!" onclick="start()">
+          </div>-->
+
+          <!--<div class="timer">
+            <p id="count">
+              0
+            </p>
+            <input type="submit" value="Запустить таймер!" onclick="start()" id="start">
+            <input type="submit" value="Остановить таймер!" onclick="stop()" id="stop" disabled>
+          </div>-->
+
+          <!--<div class="timer" >
+            <p id="clock">
+              00:00:00
+            </p>
+          </div>-->
+
+          <!--<div class="timer">
+            <p id="count">
+              10
+            </p>
+            <p id="finished"> </p><br>
+            <input type="submit" value="Запустить таймер!" onclick="start()" id="start">
+          </div>-->
+
+            <div id="slider">
+              <img src="" id="img">
+            </div>
+<!--EVENT LISTENER -->
+          <!--<div class="images">
+            <img src="img\Logo-fox.png" alt="img1"  width="90px">
+            <img src="img\Logo-foxBG.png" alt="img2" width="90px">
+          </div>-->
+
+          <!--<div class="links">
+            <a href="#" title="" >GOOGLE</a><br>
+            <a href="#" title="" >YANDEX</a><br>
+            <a href="#" title="" >ORANGE</a><br>
+            <a href="#" title="" >YAHOO</a><br>
+            <a href="#" title="" >MYWAY</a><br>
+          </div>-->
+
+          <!--<div class="act">
+            <input type="text" value="value1"><br>
+            <input type="text" value="value2"><br>
+            <input type="text" value="value3"><br>
+            <p id="test"></p>
+          </div>-->
+
+          <!--<div class="square">
+            <p>2</p>
+            <p>4</p>
+            <p>6</p>
+            <p>8</p>
+          </div>-->
+
+          <div class="color square">
+            <input type="text" data-length="4" value="">
+            <input type="text" data-length="7" value="">
+            <input type="text" data-length="9" value="">
+          </div>
 
 
           <!--<script src="js/dom.js"></script>
           <script src="js/domPage.js"></script>
           <script src="js/domDate.js"></script>-->
           <script src="js/domTimer.js"></script>
+          <script src="js/domEventListener.js"></script>
         </div>
       </div>
       <footer>
