@@ -7,6 +7,7 @@
 }
 body {
   background-color: #c3f7c3;
+  font-family: tahoma;
 }
 h1 {
   color: forestgreen;
@@ -24,7 +25,6 @@ footer {
 .text {
   text-align: center;
   color: forestgreen;
-  font-family: arial;
   /*border: solid 2px forestgreen;*/
 
   padding: 16px;
@@ -65,6 +65,22 @@ align-items: center;
   text-align: center;
   width: 150px;
 }
+.color-click p {
+  margin: 4px;
+  border: solid 2px forestgreen;
+  width: 150px;
+  height: 70px;
+}
+.time-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #count {
   font-size: 24px;
 }
@@ -81,7 +97,6 @@ input {
   border-radius: 4px;
   padding: 4px;
   margin: 4px;
-  width: 150px;
 }
 button {
   background-color: #21AF66;
@@ -95,4 +110,14 @@ button:hover {
 -webkit-box-shadow: 0px 1px 38px -4px rgba(34,139,34,0.47);
 -moz-box-shadow: 0px 1px 38px -4px rgba(34,139,34,0.47);
 background-color: #1dc41d;
+}
+table {
+  border: solid 2px forestgreen;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 8px;
+  text-align: center;
+  border: solid 1px forestgreen;
+  width: 100px;
 }

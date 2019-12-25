@@ -1,0 +1,123 @@
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: auto;
+  box-shadow: 0 0 25px rgba(0,0,0,0.2);
+  background-color: #def7de;
+}
+body {
+  background-color: #c3f7c3;
+  font-family: tahoma;
+}
+h1 {
+  color: forestgreen;
+  text-align: center;
+  text-decoration: underline;
+  padding: 18px;
+}
+footer {
+  color: green;
+  padding: 16px;
+}
+.action {
+  padding: 45px;
+}
+.text {
+  text-align: center;
+  color: forestgreen;
+  /*border: solid 2px forestgreen;*/
+
+  padding: 16px;
+}
+
+#text {
+  font-family: arial;
+}
+.dom {
+  border: dashed 1px forestgreen;
+  padding: 16px;
+}
+.insider {
+  border: solid 2px red;
+  padding: 26px;
+  margin: 16px;
+  width: 50%;
+}
+.my-class {
+  color: red;
+}
+.timer {
+  text-align: center;
+}
+.links a {
+  display: block;
+}
+.square {
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.square p {
+  font-size: 24px;
+  padding: 8px;
+  border: solid 1px forestgreen;
+  text-align: center;
+  width: 150px;
+}
+.color-click p {
+  margin: 4px;
+  border: solid 2px forestgreen;
+  width: 150px;
+  height: 70px;
+}
+.time-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#count {
+  font-size: 24px;
+}
+#result {
+  width: 150px;
+}
+#clock {
+  font-size: 24px;
+  /*color: forestgreen;*/
+}
+input {
+  background-color: #a7d6a7;
+  border-color: forestgreen;
+  border-radius: 4px;
+  padding: 4px;
+  margin: 4px;
+}
+button {
+  background-color: #21AF66;
+  border-color: forestgreen;
+  border-radius: 4px;
+  padding: 4px;
+  margin: 4px;
+}
+button:hover {
+  box-shadow: 0px 1px 38px -4px rgba(34,139,34,0.47);
+-webkit-box-shadow: 0px 1px 38px -4px rgba(34,139,34,0.47);
+-moz-box-shadow: 0px 1px 38px -4px rgba(34,139,34,0.47);
+background-color: #1dc41d;
+}
+table {
+  border: solid 2px forestgreen;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 8px;
+  text-align: center;
+  border: solid 1px forestgreen;
+  width: 100px;
+}

@@ -61,13 +61,29 @@ for (var info of infos) {
   info.addEventListener('blur', correctData);
 }
 function correctData() {
-  var correctLength = this.dataset.length;
+  var correctLength = this.getAttribute('data-length');
   var inputDataLength = this.value.length;
   if (correctLength == inputDataLength) {
     this.style.borderColor = 'green';
   } else {
-    this.styleBorderColor = 'red';
+    this.style.borderColor = 'red';
   }
 }
-console.log(correctData());
+
 /*9. Даны дивы. По первому нажатию на каждый див он красится красным фоном, по второму красится обратно и так далее каждый клик происходит чередование фона. Сделайте так, чтобы было две функции: одна красит в красный цвет, другая в зеленый и они сменяли друг друга через removeEventListener.*/
+var boxes = document.getElementsByTagName('p');
+for (var box of boxes) {
+  box.addEventListener('click', redColor);
+}
+
+function redColor() {
+  this.style.backgroundColor = 'red';
+  this.removeEventListener('click', redColor);
+  this.addEventListener('click', greenColor);
+}
+
+function greenColor() {
+  this.style.backgroundColor = 'green';
+  this.removeEventListener('click', greenColor);
+  this.addEventListener('click', redColor);
+}

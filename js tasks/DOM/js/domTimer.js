@@ -183,7 +183,7 @@ function timer() {
 }
 */
 /*5. Создайте простой слайдер:*/
-var images = ['01.png', '02.png', '03.png'];
+/*var images = ['01.png', '02.png', '03.png'];
 var slider = document.querySelector('#slider');
 var img = slider.querySelector('img');
 var i = 0;
@@ -197,9 +197,85 @@ function go() {
     }
   }, 1000);
 }
-
+*/
 /*6. Создайте карусель:*/
-
+/*function start() {
+  var startButton = document.getElementById('startButton');
+  window.setInterval(timer, 1000);
+  startButton.disabled = true;
+}
+function timer() {
+  var img1 = document.getElementById('img1');
+  var img2 = document.getElementById('img2');
+  var img3 = document.getElementById('img3');
+  var tmp = img1.src;
+  img1.src = img2.src;
+  img2.src = img3.src;
+  img3.src = tmp;
+}
+*/
 /*7. Создайте карусель:*/
-
+function start() {
+  var startButton = document.getElementById('startButton');
+  var stopButton = document.getElementById('stopButton')
+  window.timerId = window.setInterval(timer, 1000);
+  startButton.disabled = true;
+  stopButton.disabled = false;
+}
+function stop() {
+  window.clearInterval(window.timerId);
+  startButton.disabled = false;
+  stopButton.disabled = true;
+}
+function timer() {
+  var img1 = document.getElementById('img1');
+  var img2 = document.getElementById('img2');
+  var img3 = document.getElementById('img3');
+  var img4 = document.getElementById('img4');
+  var img5 = document.getElementById('img5');
+  var img6 = document.getElementById('img6');
+  var img7 = document.getElementById('img7');
+  var img8 = document.getElementById('img8');
+  var img9 = document.getElementById('img9');
+  var tmp = img1.src;
+  img1.src = img2.src;
+  img2.src = img3.src;
+  img3.src = img4.src;
+  img4.src = img5.src;
+  img5.src = img6.src;
+  img6.src = img7.src;
+  img7.src = img8.src;
+  img8.src = img9.src;
+  img9.src = tmp;
+}
 /*8.Создайте отсчет до полуночи:*/
+
+function addZero(num) {
+  if (num <= 9) {
+    num = '0' + num;
+  }
+  return num;
+}
+
+function go() {
+  window.timerId = window.setInterval(timer, 1000);
+}
+
+function timer() {
+  var now    = new Date();
+  var midnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 0, 0, 0);
+
+  var hours = document.getElementById('hours');
+  var minutes   = document.getElementById('minutes');
+  var seconds   = document.getElementById('seconds');
+
+  var dif = Math.ceil((midnight - now) / 1000);
+
+  var hoursLeft = Math.floor(dif / (60*60));
+  var minutesLeft = Math.floor((dif - hoursLeft * 60 * 60)/ 60);
+  var secondsLeft = Math.floor(dif % 60);
+
+  hours.innerHTML = hoursLeft;
+  minutes.innerHTML   = addZero(minutesLeft);
+  seconds.innerHTML   = addZero(secondsLeft);
+}
