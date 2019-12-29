@@ -76,6 +76,13 @@ align-items: center;
   flex-direction: column;
   align-items: center;
 }
+
+#elem.hide {
+  display: none;
+}
+#elem.show {
+  display: block;
+}
 #slider {
   display: flex;
   flex-direction: column;
@@ -91,6 +98,7 @@ align-items: center;
   font-size: 24px;
   /*color: forestgreen;*/
 }
+
 input {
   background-color: #a7d6a7;
   border-color: forestgreen;
