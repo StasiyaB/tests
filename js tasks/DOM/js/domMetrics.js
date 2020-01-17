@@ -1,18 +1,36 @@
 'use strict';
 /*1. Дан элемент #elem с границами. По нажатию на кнопку выведите толщину его верхней границы.*/
-
+function getTopWidth() {
+  var elem = document.getElementById('elem');
+  alert(elem.clientTop + 'px');
+}
 /*2. Дан элемент #elem с границами. По нажатию на кнопку выведите толщину его левой границы. */
-
+function getLeftWidth() {
+  var elem = document.getElementById('elem');
+  alert(elem.clientLeft + 'px');
+}
 /* *** На полный размер элемента *** */
 /*3. Дан элемент #elem с границами. По нажатию на кнопку выведите его полную ширину с учетом границы и padding. */
-
+function getOffsetWidth() {
+  var elem = document.getElementById('elem');
+  alert(elem.offsetWidth + 'px');
+}
 /*4. Дан элемент #elem с границами. По нажатию на кнопку выведите его полную высоту с учетом границы и padding.*/
-
+function getOffsetHeight() {
+  var elem = document.getElementById('elem');
+  alert(elem.offsetHeight + 'px');
+}
 /* *** На размер элемента без границ, но с padding *** */
 /*5. Дан элемент #elem с границами. По нажатию на кнопку выведите его полную ширину без учета границы, но с padding.*/
-
+function getClientWidth() {
+  var elem = document.getElementById('elem');
+  alert(elem.ClientWidth + 'px');
+}
 /*6. Дан элемент #elem с границами. По нажатию на кнопку выведите его полную высоту без учета границы, но с padding.*/
-
+function getClientHeight() {
+  var elem = document.getElementById('elem');
+  alert(elem.ClientHeight + 'px');
+}
 /* *** Работа с getComputedStyle *** */
 /*7. Дан элемент #elem. Получите его ширину и высоту, без учета границы и padding.*/
 
@@ -52,3 +70,11 @@
 /*21. По нажатию на кнопку проверьте, прокручена ли страница до самого низа. Если это так - прокрутите ее в положение 100px от верхнего края. */
 
 /*22. Дан элемент #elem. По клику на него увеличьте его ширину и высоту в 2 раза. */
+var elem = document.getElementById('elem');
+elem.addEventListener('dblclick', getBigger);
+function getBigger() {
+  var startWidth = this.offsetWidth;
+	var startHeight = this.offsetHeight;
+	this.style.width = startWidth * 2 + 'px';
+	this.style.height = startHeight * 2 + 'px';
+}

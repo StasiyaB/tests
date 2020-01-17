@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <title>DOM METRICS</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>DOM TASKS</h1>
+      <div class="action">
+        <div id="elem" style="border:solid 2px green; padding: 16px; width: 150px; height: 150px">
+          Element
+        </div>
+        <button onclick="getTopWidth()">Show the width of the top border</button>
+        <button onclick="getLeftWidth()">Show the width of the left border</button>
+        <button onclick="getOffsetWidth()">Show the complete width of the element</button>
+        <button onclick="getOffsetHeight()">Show the complete height of the element</button>
+        <button onclick="getClientWidth()">Show the width + padding of the element</button>
+        <button onclick="getClientHeight()">Show the  height + padding of the element</button>
+      </div>
+
+      <script src="js/domMetrics.js"></script>
+
+      <footer>
+        js tasks by Stasiya
+      </footer>
+    </main>
+  </body>
+</html>
