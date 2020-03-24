@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DOM TASKS Page 8</title>
+  </head>
+  <body style="height: 400px; padding: 30px; border: dashed 2px green">
+
+    <div>
+      <input onkeypress="go(event)" placeholder="Input the text" style="padding: 8px" value="" id="input"><br><br>
+      <p id="elem">
+        ...
+      </p>
+    </div>
+
+    <script type="text/javascript">
+      function go(event) {
+        var elem = document.getElementById('elem');
+        var input = document.getElementById('input');
+        if (event.keyCode == 13) {
+          elem.innerHTML = input.value;
+          input.value = ' ';
+        }
+      }
+    </script>
+  </body>
+</html>

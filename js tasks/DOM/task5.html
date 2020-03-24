@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DOM TASKS Page 5</title>
+  </head>
+  <body >
+    <div>
+      <input onkeypress="go(event)" placeholder="Input the text" style="padding: 8px">
+    </div><br>
+    <div>
+      The Pressed key:
+      <span id="show"> ?</span>
+    </div>
+    <script type="text/javascript">
+      function go(event) {
+        var code = event.keyCode;
+        var key = String.fromCharCode(event.keyCode);
+        document.getElementById('show').innerHTML = key;
+      }
+    </script>
+  </body>
+</html>

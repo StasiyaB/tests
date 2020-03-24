@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DOM TASKS Page 6</title>
+  </head>
+  <body style="height: 400px; padding: 30px; border: dashed 2px green">
+
+
+    <div id="elem" onclick="changeColor(event)">
+      Element
+    </div>
+
+    <script type="text/javascript">
+      function changeColor(event) {
+        var elem = document.getElementById('elem');
+        if (event.ctrlKey) {
+          elem.style.color = 'red';
+        }
+      }
+    </script>
+  </body>
+</html>

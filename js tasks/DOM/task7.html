@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DOM TASKS Page 7</title>
+  </head>
+  <body style="height: 400px; padding: 30px; border: dashed 2px green">
+
+
+    <div id="elem" onclick="addNumber(event)">
+      ?
+    </div>
+
+    <script type="text/javascript">
+      function addNumber(event) {
+        var elem = document.getElementById('elem');
+        if (event.ctrlKey) {
+          elem.innerHTML = '1';
+        }
+        if (event.altKey) {
+          elem.innerHTML = '2';
+        }
+        if (event.shiftKey) {
+          elem.innerHTML = '3';
+        }
+      }
+    </script>
+  </body>
+</html>

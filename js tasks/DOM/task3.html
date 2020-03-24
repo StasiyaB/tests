@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DOM TASKS Page 3</title>
+  </head>
+  <body style="height: 400px; padding: 30px; border: dashed 2px green">
+    Push whereever you want...
+
+    <div id="show" style="width: 100px; height: 100px; border: 1px solid red; position: absolute; top: 90px; left: 35px">
+    </div>
+
+    <script type="text/javascript">
+      window.addEventListener('click', go);
+      function go(event) {
+        var elem = document.getElementById('show');
+        elem.style.left = (event.clientX - parseInt(window.getComputedStyle(elem, "").width) / 2)+'px';
+        elem.style.top = (event.clientY  - parseInt(window.getComputedStyle(elem, "").height) / 2)+'px';
+      }
+    </script>
+  </body>
+</html>

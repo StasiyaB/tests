@@ -1,0 +1,90 @@
+.container {
+  width: 70%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 40px;
+  background-color: black;
+}
+h1 {
+  color: white;
+    text-align: center;
+}
+.flex-buttons {
+  display: flex;
+  justify-content: center;
+}
+.flex-buttons button {
+  width: 200px;
+  padding: 16px;
+  color: white;
+  background-color: gray;
+  border: none;
+}
+form {
+  width: 420px;
+  text-align: center;
+}
+.flex-buttons button:first-child {
+  background-color: green;
+}
+
+.flex-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.flex-inputs {
+  display: flex;
+  justify-content: center;
+
+}
+.flex-inputs input{
+  width: 160px;
+  margin-right: 26px;
+  padding: 10px;
+  margin-top: 16px;
+  background-color: black;
+  border: solid 1px gray;
+}
+
+.inputs input {
+  width:380px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: black;
+  border: solid 1px gray;
+}
+/*.flex-inputs input:first-child {
+  width: 160px;
+  margin-right: 26px;
+}
+.flex-inputs input:nth-child(2) {
+  width: 160px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+*/
+label sup {
+  color: green;
+}
+label {
+  color: gray;
+  position: relative;
+  left: -138px;
+  bottom: 30px;
+}
+
+
+.start {
+  text-align: center;
+}
+.start button {
+  background-color: green;
+  color: white;
+  width: 400px;
+  padding: 24px;
+  border: none;
+  margin-top: 26px;
+  text-transform: uppercase;
+  letter-spacing: 3px;;
+}
