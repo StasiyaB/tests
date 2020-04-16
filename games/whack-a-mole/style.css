@@ -1,0 +1,47 @@
+.container {
+  width: 80%;
+  max-width: 620px;
+  margin: auto;
+  padding: 10px;
+  background-color: #f6d9f7;
+  box-shadow: 0 0 25px rgba(0,0,0,0.2);
+}
+.square {
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  border-color: #874a89;
+  background-color: #CB99CC;
+}
+
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  width: 618px;
+  height: 618px;
+}
+
+.mole {
+  background-image: url('mole.png');
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  color: #470949;
+}
+h2 {
+  margin: 24px;
+  color:  #522b54;
+}
+h2:nth-child(3) {
+  color: forestgreen;
+}
+h2:nth-child(5) {
+  color: red;
+}
+body {
+  background-color: #874a89;
+}
