@@ -59,3 +59,7 @@ button {
 button:hover {
   background-color: RGBA(246,217,247,0.66);
 }
+
+body {
+  background-color: #fef2ff;
+}
