@@ -12,4 +12,5 @@ function findLargest(numbers) {
    }
    return maxValue;
  }
+
  console.log(findLargest());

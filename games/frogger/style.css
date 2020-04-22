@@ -1,0 +1,92 @@
+.container {
+  width: 80%;
+  max-width: 290px;
+  margin: auto;
+  padding: 10px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.2);
+  background-color: #eff7ef;
+}
+
+.top {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.grid {
+  border: 1px solid forestgreen;
+  display: flex;
+  flex-wrap: wrap;
+  height: 288px;
+  width: 288px;
+}
+
+.grid div {
+  height: 32px;
+  width: 32px;
+}
+
+.ending-block {
+  background-color: red;
+}
+
+.starting-block {
+  background-color: blue;
+}
+
+.c1 {
+  background-color: black;
+}
+
+.c2, .c3 {
+  background-color: grey;
+}
+
+.l1, .l2, .l3 {
+  background-color: brown;
+}
+
+.l4, .l5 {
+  background-color: lightblue;
+}
+
+.frog {
+  background-color: green;
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+h1 {
+  color: forestgreen;
+  text-shadow: 4px 4px 8px rgba(34,139,34,0.33);
+}
+h3 {
+  color: #79ade5;
+}
+
+h3 span {
+  color: red;
+}
+
+#result {
+  color: forestgreen;
+  text-shadow: 4px 4px 8px rgba(34,139,34,0.33);
+}
+
+button {
+  color: #79ade5;
+  border: solid 1px #79ade5;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #d3e5d3;
+}
+
+button:hover {
+  background-color: #eff7ef;
+}
+
+body {
+  background-color: #deedde;
+}
